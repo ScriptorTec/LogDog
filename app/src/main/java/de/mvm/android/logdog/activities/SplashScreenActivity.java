@@ -6,8 +6,10 @@ import android.os.SystemClock;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 
 import com.orhanobut.hawk.Hawk;
+import com.squareup.picasso.Picasso;
 
 import de.mvm.android.logdog.R;
 
@@ -24,6 +26,12 @@ public class SplashScreenActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        context = getApplicationContext();
+
+        ImageView ivSplashscreenLogo = (ImageView) findViewById(R.id.ivSplashscreenLogo);
+
+        Picasso.with(context).load(R.mipmap.splashscreen).into(ivSplashscreenLogo);
 
         context = getApplicationContext();
 

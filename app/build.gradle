@@ -25,4 +25,7 @@ dependencies {
 
     // Hawk - https://github.com/orhanobut/hawk
     compile 'com.orhanobut:hawk:1.6'
+
+    // Picasso - http://square.github.io/picasso/
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
